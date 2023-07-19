@@ -41,11 +41,12 @@ body {
     background: url(images/bg-header-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
+    /* margin: 0 5em; */
   }
-  .container {
-    margin: 0 10em;
-    text-align: center;
-  }
+}
+.container {
+  /* margin: 0 5em; */
+  text-align: center;
 }
 
 header {
@@ -128,36 +129,39 @@ h3 {
 
 .computer {
   margin-bottom: 5em;
-  max-width: 80%;
+  /* max-width: 80%; */
 }
 
 @media screen and (min-width: 800px) {
-  .snippets--paragraph {
-    margin: 0 10em;
+  img {
+    max-width: 100%;
   }
+
+  .snippets {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .snippets--paragraph {
+    width: 40%;
+    margin: 0 auto;
+  }
+
   .move {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 50%);
-    margin-top: 10em;
+    display: flex;
+  }
+
+  .image-wrapper {
+    position: relative;
+    left: -5%;
   }
 
   .right {
-    margin-top: 7em;
     text-align: left;
-    width: 50%;
-    position: absolute;
-    right: -5%;
-    margin-left: 500px;
-  }
-
-  .computer {
-    position: absolute;
-    left: -3%;
-    width: 50%;
-  }
-
-  .sub_snippet {
-    width: 50%;
+    margin-top: 5em;
+    max-width: 20%;
+    margin-left: 5em;
   }
 }
 
@@ -179,7 +183,8 @@ h3 {
 
 @media screen and (min-width: 800px) {
   .remote--access {
-    margin-top: 60em;
+    /* margin-top: 60em; */
+    margin-top: 6em;
   }
 }
 
@@ -209,13 +214,14 @@ h3 {
   margin: 3em 0;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .workflow--line {
     display: flex;
+    width: 100%;
   }
 
   .sub--workflow {
-    width: 100%;
+    width: 50%;
   }
 
   .reduce {
@@ -225,20 +231,19 @@ h3 {
 
 .partners {
   margin: 10em auto;
-  width: 15em;
+  width: 100%;
 }
 
 .partners--logo {
-  width: 100%;
   margin: 5em auto;
+  width: 50%;
 }
 
 @media screen and (min-width: 600px) {
   .partners {
     display: flex;
     flex-direction: row;
-    margin: 10em auto;
-    width: 100%;
+    margin: 10em auto 0;
   }
 
   .partners--logo {
@@ -247,7 +252,7 @@ h3 {
 }
 
 .cta {
-  margin: 0 2em;
+  margin: 10em 2em 0;
 }
 
 .cta--heading {
@@ -262,7 +267,7 @@ h3 {
   margin: 1em 2em 3em;
 }
 
-footer {
+.footer--block {
   background: rgb(243, 241, 239);
   padding: 3em 0;
   margin-top: 15em;
@@ -300,11 +305,14 @@ li a:hover {
 
 @media screen and (min-width: 600px) {
   footer {
+    padding: 0;
+  }
+  .footer--block {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
     padding: 0 5em;
+    /* margin: 0 5em; */
   }
 
   .footer--clipboard {
@@ -315,7 +323,6 @@ li a:hover {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-left: 5em;
   }
 
   li a {
