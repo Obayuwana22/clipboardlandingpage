@@ -24,32 +24,21 @@ html {
   font-family: "Bai Jamjuree", sans-serif;
 }
 
-body {
-  background: url(images/bg-header-mobile.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .container {
   min-width: 375px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-@media screen and (min-width: 600px) {
-  body {
-    background: url(images/bg-header-desktop.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-}
-.container {
-  margin: 0 5em;
   text-align: center;
 }
 
 header {
-  margin: 10em 3em;
+  background: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 3em;
+}
+
+.logo {
+  margin-top: 10em;
 }
 
 .title {
@@ -87,26 +76,8 @@ header {
   background: var(--Light-Blue);
 }
 
-@media screen and (min-width: 600px) {
-  .logo {
-    max-width: 20%;
-  }
-  .btn {
-    margin: 0.5em;
-  }
-
-  .title {
-    font-size: 4rem;
-  }
-
-  .header-paragraph {
-    max-width: 35em;
-    margin: 0 auto 3em;
-  }
-}
-
 .snippets {
-  margin: 0 5em 10em;
+  margin: 15em 5em 15em;
 }
 
 .snippets h2,
@@ -130,41 +101,8 @@ h3 {
   margin-bottom: 5em;
 }
 
-@media screen and (min-width: 800px) {
-  img {
-    max-width: 100%;
-  }
-
-  .snippets {
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .snippets--paragraph {
-    width: 40%;
-    margin: 0 auto;
-  }
-
-  .move {
-    display: flex;
-  }
-
-  .image-wrapper {
-    position: relative;
-    left: -5%;
-  }
-
-  .right {
-    text-align: left;
-    margin-top: 5em;
-    max-width: 20%;
-    margin-left: 5em;
-  }
-}
-
 .remote--access {
-  margin: 5em 3em;
+  margin: 10em 3em;
 }
 
 .remote--heading {
@@ -177,12 +115,6 @@ h3 {
   color: var(--Grayish-Blue);
   font-size: 1.5rem;
   margin: 0 1em 4em;
-}
-
-@media screen and (min-width: 800px) {
-  .remote--access {
-    margin-top: 6em;
-  }
 }
 
 .workflow {
@@ -211,41 +143,16 @@ h3 {
   margin: 3em 0;
 }
 
-@media screen and (min-width: 800px) {
-  .workflow--line {
-    display: flex;
-    width: 100%;
-  }
-
-  .sub--workflow {
-    width: 50%;
-  }
-
-  .reduce {
-    margin-bottom: 2em;
-  }
-}
-
 .partners {
+  display: flex;
+  flex-direction: column;
   margin: 10em auto;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .partners--logo {
   margin: 5em auto;
-  width: 50%;
-}
-
-@media screen and (min-width: 600px) {
-  .partners {
-    display: flex;
-    flex-direction: row;
-    margin: 10em auto 0;
-  }
-
-  .partners--logo {
-    padding: 0 3em;
-  }
+  /* width: 50%; */
 }
 
 .cta {
@@ -264,14 +171,14 @@ h3 {
   margin: 1em 2em 3em;
 }
 
-.footer--block {
+.more--info {
   background: rgb(243, 241, 239);
   padding: 3em 0;
   margin-top: 15em;
   text-align: center;
 }
 
-.footer--clipboard {
+.footer--logo {
   width: 60px;
 }
 
@@ -301,38 +208,79 @@ li a:hover {
 }
 
 @media screen and (min-width: 600px) {
-  footer {
-    padding: 0;
+  header {
+    background: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
-  .footer--block {
+
+  .header-paragraph {
+    max-width: 35%;
+    margin: 0 auto 3em;
+  }
+
+  .btn {
+    margin: 0.5em 1em;
+  }
+
+  .move {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .computer {
+    width: 100%;
+    transform: translateX(-10vw);
+  }
+
+  .right {
+    text-align: left;
+  }
+
+  .workflow--line {
+    display: flex;
+  }
+
+  .sub--workflow {
+    width: 50%;
+  }
+
+  .reduce {
+    margin: 2.6em;
+  }
+
+  .partners {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .partners--logo {
+    margin: 2em;
+    width: 10%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .more--info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5em;
-  }
-
-  .footer--clipboard {
-    width: 40px;
+    padding: 7em 10em;
+    height: 100px;
   }
 
   nav ul {
     display: flex;
-    align-items: flex-start;
+    margin: 0;
+    margin-left: 5em;
     flex-wrap: wrap;
-  }
-
-  li a {
-    text-decoration: none;
-    color: var(--Dark-Grayish-Blue);
-    transition: color 0.2s;
-    font-size: 1rem;
   }
 
   .socials {
     display: flex;
-  }
-
-  .socials img {
-    width: 10px;
   }
 }
