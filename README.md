@@ -27,7 +27,8 @@ Users should be able to:
 ### Screenshot
 
 ![Screenshot 2023-07-21 095310](https://github.com/Obayuwana22/clipboardlandingpage/assets/85890626/0bae330c-41a4-40b6-8996-320dc02f5cef)
-![Screenshot 2023-07-21 095303](https://github.com/Obayuwana22/clipboardlandingpage/assets/85890626/71bac92d-361e-4c3b-a58f-fc58cd22c91
+![Screen Shot 2023-07-21 at 09 49 27](https://github.com/Obayuwana22/clipboardlandingpage/assets/85890626/51a0f169-a06d-4160-8d44-4554d5273c21)
+
 
 
 ### Links
