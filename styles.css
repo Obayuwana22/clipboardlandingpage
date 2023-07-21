@@ -171,7 +171,7 @@ h3 {
   margin: 1em 2em 3em;
 }
 
-.more--info {
+footer {
   background: rgb(243, 241, 239);
   padding: 3em 0;
   margin-top: 15em;
@@ -207,6 +207,10 @@ li a:hover {
   margin: 1em;
 }
 
+.attribution {
+  margin-top: 5em;
+}
+
 @media screen and (min-width: 600px) {
   header {
     background: url(images/bg-header-desktop.png);
@@ -216,12 +220,17 @@ li a:hover {
   }
 
   .header-paragraph {
-    max-width: 35%;
+    width: 35%;
     margin: 0 auto 3em;
   }
 
   .btn {
     margin: 0.5em 1em;
+  }
+
+  .snippets--paragraph {
+    width: 40%;
+    margin: 0 auto;
   }
 
   .move {
@@ -238,6 +247,15 @@ li a:hover {
 
   .right {
     text-align: left;
+  }
+
+  .remote--paragraph {
+    width: 35%;
+    margin: 0 auto 5em;
+  }
+
+  .workflow {
+    margin-bottom: 20em;
   }
 
   .workflow--line {
@@ -262,9 +280,22 @@ li a:hover {
     width: 10%;
     margin: 0 auto;
   }
+
+  .cta {
+    margin-top: 20em;
+  }
+
+  .cta--paragraph {
+    width: 35%;
+    margin: 1em auto 3em;
+  }
 }
 
 @media screen and (min-width: 800px) {
+  .move {
+    margin-top: 10em;
+  }
+
   .more--info {
     display: flex;
     justify-content: space-between;
@@ -282,5 +313,8 @@ li a:hover {
 
   .socials {
     display: flex;
+  }
+  .attribution {
+    margin: 0;
   }
 }
