@@ -21,12 +21,14 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
+- View the optimal layout for the site depending on their device's screen sizeb)
 - See hover states for all interactive elements on the page
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot 2023-07-21 095310](https://github.com/Obayuwana22/clipboardlandingpage/assets/85890626/0bae330c-41a4-40b6-8996-320dc02f5cef)
+![Screenshot 2023-07-21 095303](https://github.com/Obayuwana22/clipboardlandingpage/assets/85890626/71bac92d-361e-4c3b-a58f-fc58cd22c91
+
 
 ### Links
 
